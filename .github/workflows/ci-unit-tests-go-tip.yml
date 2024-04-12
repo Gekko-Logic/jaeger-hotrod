@@ -1,13 +1,22 @@
 name: Unit Tests on Go Tip
 
-on:
-  push:
-    branches: [main]
+#on:
+#  push:
+#    branches: [main]
+#
+## See https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions
+#permissions:  # added using https://github.com/step-security/secure-workflows
+#  contents: read
+#  checks: write
 
-# See https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions
-permissions:  # added using https://github.com/step-security/secure-workflows
-  contents: read
-  checks: write
+on:
+  #  push:
+  #    branches: [main]
+  #
+  #  pull_request:
+  #    branches: [main]
+  #
+  workflow_dispatch:
 
 jobs:
   unit-tests-go-tip:

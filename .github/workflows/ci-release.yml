@@ -1,10 +1,12 @@
 name: Publish release
 
 on:
-  release:
-    types:
-      - published
-  # allow running release workflow manually
+  #  push:
+  #    branches: [main]
+  #
+  #  pull_request:
+  #    branches: [main]
+  #
   workflow_dispatch:
 
 # See https://github.com/jaegertracing/jaeger/issues/4017
